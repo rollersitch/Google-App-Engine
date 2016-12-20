@@ -1,0 +1,28 @@
+
+	{% extends 'base.html' %}
+	{% block content %}
+	<form action="/testUserSignIn" method="post">
+		<label><h5 style="color:blue">Username
+		<input type="text" name="username" value="{{username_value}}">
+		</label> <span name="username-error">{{username_error}}</span>
+		<br>
+		<label><h5 style="color:blue">Password
+		<input type="password" name="password" value="{{password_value}}">
+		</label> <span name="password-error">{{password_error}}</span>
+		<br>
+		<label><h5 style="color:blue">Verify
+		<input type="password" name="verify" value="{{verify_value}}">
+		</label> <span name="verify-error">{{verify_error}}</span>
+		<br>
+		<label><h5 style="color:blue">Email(optional)
+		<input type="text" name="email" value="{{email_value}}">
+		</label> <span name="email-error">{{email_error}}</span>
+		<br>
+		<br>
+							
+		<input type="submit" name="submit-btn" value="Log In" style="text-align:center">
+
+		<marquee>Ciaooooo</marquee>
+				
+	</form>
+	{% endblock %}
